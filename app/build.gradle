@@ -19,7 +19,7 @@ import groovy.xml.MarkupBuilder;
 apply plugin: 'com.android.application'
 
 def twaManifest = [
-    applicationId: 'org.nickmafra.symballs',
+    applicationId: 'com.nickmafra.symballs',
     hostName: 'nickmafra.github.io', // The domain being opened in the TWA.
     launchUrl: '/sym-balls/', // The start path for the TWA. Must be relative to the domain.
     name: 'SymBalls Game', // The name shown on the Android Launcher.
@@ -41,11 +41,11 @@ def twaManifest = [
 ]
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 33
     defaultConfig {
         applicationId twaManifest.applicationId
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode 3
         versionName "2.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
