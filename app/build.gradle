@@ -19,13 +19,13 @@ import groovy.xml.MarkupBuilder;
 apply plugin: 'com.android.application'
 
 def twaManifest = [
-    applicationId: 'org.chromium.twa.svgomg',
-    hostName: 'svgomg.firebaseapp.com', // The domain being opened in the TWA.
-    launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
-    name: 'SVGOMG TWA', // The name shown on the Android Launcher.
-    themeColor: '#303F9F', // The color used for the status bar.
-    navigationColor: '#303F9F', // The color used for the navigation bar.
-    backgroundColor: '#bababa', // The color used for the splash screen background.
+    applicationId: 'org.nickmafra.symballs',
+    hostName: 'nickmafra.github.io', // The domain being opened in the TWA.
+    launchUrl: '/sym-balls/', // The start path for the TWA. Must be relative to the domain.
+    name: 'SymBalls Game', // The name shown on the Android Launcher.
+    themeColor: '#165f73', // The color used for the status bar.
+    navigationColor: '#165f73', // The color used for the navigation bar.
+    backgroundColor: '#000000', // The color used for the splash screen background.
     enableNotifications: false, // Set to true to enable notification delegation.
     // Add shortcuts for your app here. Every shortcut must include the following fields:
     // - name: String that will show up in the shortcut.
